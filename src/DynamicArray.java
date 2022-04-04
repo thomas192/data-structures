@@ -66,7 +66,7 @@ public class DynamicArray<T> implements Iterable<T> {
 
     public int indexOf(Object obj) {
         for (int i = 0; i < len; i++)
-            if (arr[i] == obj) return i;
+            if (obj.equals(arr[i])) return i;
         return -1;
     }
 
