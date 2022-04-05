@@ -1,4 +1,4 @@
-public class Stack<T> implements Iterable<T>{
+public class Stack<T> implements Iterable<T> {
 
     private java.util.LinkedList<T> list = new java.util.LinkedList<T>();
 
@@ -28,7 +28,7 @@ public class Stack<T> implements Iterable<T>{
     }
 
     @Override
-    public java.util.Iterator<T> iterator () {
+    public java.util.Iterator<T> iterator() {
         return list.iterator();
     }
 
