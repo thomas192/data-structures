@@ -186,14 +186,14 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         return sb.append(trav.data + "]").toString();
     }
 
-    // get first value if it exists, O(1)
-    public T getFirst() {
+    // peek first value if it exists, O(1)
+    public T peekFirst() {
         if (isEmpty()) throw new RuntimeException("Empty List");
         return head.data;
     }
 
-    // get last value if it exists, O(1)
-    public T getLast() {
+    // peek last value if it exists, O(1)
+    public T peekLast() {
         if (isEmpty()) throw new RuntimeException("Empty List");
         return tail.data;
     }
