@@ -1,11 +1,11 @@
-public class Queue<T> implements Iterable<T> {
+public class LinkedQueue<T> implements Iterable<T> {
 
     private java.util.LinkedList<T> list = new java.util.LinkedList<T>();
 
-    public Queue() {
+    public LinkedQueue() {
     }
 
-    public Queue(T firstElem) {
+    public LinkedQueue(T firstElem) {
         offer(firstElem);
     }
 
